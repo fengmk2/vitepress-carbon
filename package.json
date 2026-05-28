@@ -42,8 +42,7 @@
     "@types/mark.js": "^8.11.12",
     "globals": "^17.4.0",
     "typescript": "^5.9.3",
-    "vite-plus": "catalog:",
-    "vitest": "catalog:"
+    "vite-plus": "catalog:"
   },
   "peerDependencies": {
     "vitepress": "^1.5.0"
