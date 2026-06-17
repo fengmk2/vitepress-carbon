@@ -30,3 +30,5 @@ minimumReleaseAgeExclude:
   - oxfmt
   - oxlint-tsgolint
 blockExoticSubdeps: false
+allowBuilds:
+  esbuild: true
