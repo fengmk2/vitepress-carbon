@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        node_version: ['20.19.0', '22.18.0', '24']
+        node_version: ['22.18.0', '24']
 
     steps:
       - name: Harden the runner (Audit all outbound calls)
@@ -40,7 +40,6 @@ jobs:
         run: vp install --frozen-lockfile
 
       - name: Run checks
-        if: matrix.node_version != '20.19.0'
         run: vp check --fix
 
       - name: Run tests
