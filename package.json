@@ -42,8 +42,8 @@
     "@types/mark.js": "^8.11.12",
     "globals": "^17.4.0",
     "typescript": "^5.9.3",
-    "vite-plus": "catalog:",
-    "vitest": "catalog:"
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.5b214b7987c99adfe0aff4d406264457ed0232ce",
+    "vite-plus": "0.0.0-commit.5b214b7987c99adfe0aff4d406264457ed0232ce"
   },
   "peerDependencies": {
     "vitepress": "^1.5.0"
@@ -51,5 +51,18 @@
   "engines": {
     "node": "^20.19.0 || >=22.18.0"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.9.0",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.5b214b7987c99adfe0aff4d406264457ed0232ce"
+    },
+    "peerDependencyRules": {
+      "allowAny": [
+        "vite"
+      ],
+      "allowedVersions": {
+        "vite": "*"
+      }
+    }
+  }
 }
